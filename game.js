@@ -396,6 +396,7 @@ Ship = function () {
   this.children.exhaust = new Sprite();
   this.children.exhaust.solid = true;
   this.children.exhaust.color = 'red';
+
   this.children.exhaust.init("exhaust",
                              [-3,  6,
                                0, 11,
@@ -722,6 +723,9 @@ Coin = function () {
               0,  5,
               5,  0,
               0, -5]);
+
+  this.color = `red`; //srd
+  this.solid = true;
 
   this.collidesWith = ["ship"];
 
